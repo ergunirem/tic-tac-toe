@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container"></div>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Tic-Tac-Toe</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+</head>
+<body>
     <h1>Tic-Tac-Toe</h1>
-    <div class="play-area">
-      <div id="block_0" class="block"></div>
-      <div id="block_1" class="block"></div>
-      <div id="block_2" class="block"></div>
-      <div id="block_3" class="block"></div>
-      <div id="block_4" class="block"></div>
-      <div id="block_5" class="block"></div>
-      <div id="block_6" class="block"></div>
-      <div id="block_7" class="block"></div>
-      <div id="block_8" class="block"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h1 id="modal-title">Choose Players</h1>
+            <div class="button-container">
+                <div class="player-boxes">
+                    <p>Player 1</p>
+                    <p>VS</p>
+                    <p>Player 2</p>
+                    <button type="button" id="twoplayer" value="button">Start</button>
+                </div>
+                <div class="player-boxes">
+                    <p>You</p>
+                    <p>VS</p>
+                    <p>Dumb PC</p>
+                    <button type="button" id="dumbcomputer" value="button">Start</button>
+                </div>
+                <div class="player-boxes">
+                    <p>You</p>
+                    <p>VS</p>
+                    <p>Smart AI</p>
+                    <button type="button" id="smartai" value="button">Start</button>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="restart">
+        <button>RESTART</button>
+    </div>
+    <div class="outer-container">
+        <div class="playerX">
+            <p id="playerX"></p>
+            <p>X</p>
+        </div>
+        <div class="container">
+            <div class="play-area">
+                <div id="0" class="block"></div>
+                <div id="1" class="block"></div>
+                <div id="2" class="block"></div>
+                <div id="3" class="block"></div>
+                <div id="4" class="block"></div>
+                <div id="5" class="block"></div>
+                <div id="6" class="block"></div>
+                <div id="7" class="block"></div>
+                <div id="8" class="block"></div>
+            </div>    
+        </div>
+        <div class="playerO">
+            <p id="playerO"></p>
+            <p>O</p>
+        </div>
+    </div>
+   
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
